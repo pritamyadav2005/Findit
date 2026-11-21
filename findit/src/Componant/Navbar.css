@@ -1,0 +1,164 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: linear-gradient(120deg, #17133d, #292154);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  gap: 25px;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  background: cornflowerblue;
+  padding: 7px 13px;
+  border-radius: 10px;
+}
+
+/* Search */
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 4px 8px;
+  flex: 1;
+  max-width: 280px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 9px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-box button {
+  border: none;
+  background: cornflowerblue;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+/* Navigation Links */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #79a8ff;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: cornflowerblue;
+}
+
+/* Buttons */
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn {
+  color: white;
+  border: 1px solid white;
+}
+
+.login-btn:hover {
+  background: white;
+  color: #292154;
+}
+
+.register-btn {
+  background: cornflowerblue;
+  color: white;
+}
+
+.register-btn:hover {
+  background: #527bd0;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .search-box {
+    order: 3;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    order: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    gap: 8px;
+  }
+}

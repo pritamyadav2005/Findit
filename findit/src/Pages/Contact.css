@@ -1,0 +1,148 @@
+
+.contact-page {
+  background: #f8f9fc;
+  min-height: 80vh;
+}
+
+/* Banner */
+
+.contact-banner {
+  background: #292154;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.contact-banner h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.contact-banner p {
+  color: #ddd;
+  font-size: 16px;
+}
+
+/* Main Section */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  padding: 65px 8%;
+}
+
+/* Contact Information */
+
+.contact-info h2,
+.contact-form h2 {
+  color: #292154;
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+.contact-info > p {
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.contact-detail span {
+  background: #eeeafc;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+.contact-detail h3 {
+  color: #292154;
+  margin-bottom: 5px;
+}
+
+.contact-detail p {
+  color: #777;
+}
+
+/* Contact Form */
+
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #292154;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #292154;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e09b38;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 40px 5%;
+  }
+
+  .contact-banner h1 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+
+}
+.btn{
+ background-color:red;
+  
+
+ 
+
+}
